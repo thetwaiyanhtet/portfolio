@@ -15,7 +15,7 @@ const NavBar = () => {
         <li className=" menu">experiences</li>
         <li className=" menu">projects</li>
       </ul>
-      <div className=" md:hidden z-10" onClick={toggleMenu}>
+      <div className=" md:hidden z-10 block text-gray-500 " onClick={toggleMenu}>
         {isOpen ? <RxCross2 /> : <RiMenu5Line />}
       </div>
       {isOpen && (
