@@ -4,18 +4,42 @@
 @tailwind components;
 @tailwind utilities;
 
+*{
+  @apply transition-all duration-200
+}
 .menu {
   @apply p-2 py-3 cursor-pointer;
-  border-top: 1px solid transparent; /* Set initial border */
-  border-bottom: 1px solid transparent; /* Set initial border */
-  transition: border-color 1s ease, padding 0.5s ease; /* Apply transition to border-color */
+  border-top: 2px solid transparent; /* Set initial border */
+  border-bottom: 2px solid transparent; /* Set initial border */
+  transition: border 0.5s ease, padding 0.3s ease; /* Apply transition to border-color */
+  
 }
 
 .menu:hover {
-  border-color: black; /* Change border color on hover */
+  border-color: rgb(169, 6, 245); /* Change border color on hover */
   padding-top: 3px; /* Expand top padding on hover */
   padding-bottom: 3px; /* Expand bottom padding on hover */
 }
+
+.mobile-menu{
+  @apply bg-purple-500 bg-opacity-30 p-2 rounded-md flex justify-center items-center
+}
+
+/* @media(prefers-color-scheme:dark){
+  .menu:hover{
+    border-color: white;
+  }
+} */
+
+.text-shadow{
+  text-shadow: 1px 1px 10px rgb(7, 223, 239);
+}
+
+
+.form{
+  @apply bg-transparent p-3 border rounded-md md:w-96 focus:outline-none
+}
+
 
 @keyframes intenseBounce {
   0% {
@@ -41,3 +65,4 @@
 .intense-bounce {
   animation: intenseBounce 2s infinite;
 }
+

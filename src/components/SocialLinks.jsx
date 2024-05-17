@@ -44,7 +44,7 @@ const SocialLinks = () => {
   return (
     <div>
       <div>
-        <ul className=" capitalize text-white absolute top-[35%] left-0">
+        <ul className=" capitalize text-tBase fixed top-[35%] left-0 md:block hidden">
           {links.map((link, index) => (
             <li
               key={index}

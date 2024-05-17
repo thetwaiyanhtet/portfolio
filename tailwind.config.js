@@ -4,9 +4,15 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        poppins: ["Poppins", "sans-serif"],
+        poppins: ["Poppins"],
       },
+      colors:{
+        primary: "black",
+        secondary: "#a855f7",
+        tBase: "white",
+      }
     },
   },
   plugins: [],
+  darkMode: "class",
 };
